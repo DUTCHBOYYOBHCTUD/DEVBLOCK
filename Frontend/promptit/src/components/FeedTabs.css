@@ -1,0 +1,31 @@
+.feed-tabs {
+  display: flex;
+  background: #fbefff;
+  border-radius: 10px;
+  padding: 4px 8px;
+  gap: 4px;
+  width: fit-content;
+  margin: 0 0 1.5rem 0;
+}
+.feed-tab-btn {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 6px 14px;
+  border-radius: 7px;
+  font-size: 0.98rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.feed-tab-btn.active {
+  background: #181818;
+  color: #e86cff;
+}
+.feed-tab-btn.active .feed-tab-label.trending {
+  color: #e86cff;
+  font-weight: 600;
+}

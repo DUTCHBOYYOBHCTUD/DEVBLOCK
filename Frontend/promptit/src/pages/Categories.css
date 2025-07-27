@@ -1,0 +1,141 @@
+.categories-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+  padding: 2rem;
+  color: white;
+}
+
+.categories-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.categories-header h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(45deg, #8d2be2, #ff6b6b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.categories-header p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.category-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.category-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--category-color);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.category-card.active {
+  border-color: var(--category-color);
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-5px);
+}
+
+.category-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.category-name {
+  color: var(--category-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.category-count {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.category-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.category-content h2 {
+  color: #8d2be2;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.coming-soon {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(141, 43, 226, 0.3);
+  border-radius: 20px;
+  padding: 3rem;
+  backdrop-filter: blur(10px);
+}
+
+.coming-soon-content h3 {
+  color: #feca57;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.coming-soon-content p {
+  color: #ccc;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.coming-soon-content a {
+  color: #8d2be2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.coming-soon-content a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .categories-container {
+    padding: 1rem;
+  }
+  
+  .categories-header h1 {
+    font-size: 2rem;
+  }
+  
+  .categories-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .category-card {
+    padding: 1.5rem;
+  }
+  
+  .coming-soon {
+    padding: 2rem;
+  }
+}
+
+

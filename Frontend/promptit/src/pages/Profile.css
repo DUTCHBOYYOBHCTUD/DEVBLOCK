@@ -1,0 +1,234 @@
+.profile-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+  padding: 2rem;
+  color: white;
+}
+
+.profile-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.5rem;
+  color: #8d2be2;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+}
+
+.connect-message {
+  text-align: center;
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(141, 43, 226, 0.3);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.profile-header h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(45deg, #8d2be2, #ff6b6b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.wallet-address {
+  background: rgba(141, 43, 226, 0.2);
+  border: 2px solid #8d2be2;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.nft-collection {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.owned-nfts h2 {
+  color: #8d2be2;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.nft-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.owned-nft-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(141, 43, 226, 0.3);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.owned-nft-card:hover {
+  transform: translateY(-10px);
+  border-color: #8d2be2;
+  box-shadow: 0 20px 40px rgba(141, 43, 226, 0.3);
+}
+
+.nft-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.nft-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.token-id {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(141, 43, 226, 0.9);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.nft-details {
+  padding: 1.5rem;
+}
+
+.nft-details h3 {
+  color: #8d2be2;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.nft-details p {
+  color: #ccc;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.ownership-badge {
+  background: linear-gradient(45deg, #28a745, #20c997);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 0.9rem;
+}
+
+.no-nfts {
+  text-align: center;
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(141, 43, 226, 0.3);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.no-nfts h2 {
+  color: #8d2be2;
+  margin-bottom: 1rem;
+}
+
+.no-nfts p {
+  color: #ccc;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.shop-link {
+  display: inline-block;
+  background: linear-gradient(45deg, #8d2be2, #ff6b6b);
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.shop-link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(141, 43, 226, 0.4);
+  color: white;
+  text-decoration: none;
+}
+
+.user-info {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(141, 43, 226, 0.3);
+  border-radius: 20px;
+  padding: 1.5rem;
+  margin: 1.5rem auto;
+  max-width: 600px;
+  backdrop-filter: blur(10px);
+}
+
+.user-info h2 {
+  color: #8d2be2;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.profile-stats {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stat-label {
+  color: #ccc;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.stat-value {
+  color: #8d2be2;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 1rem;
+  }
+  
+  .profile-header h1 {
+    font-size: 2rem;
+  }
+  
+  .nft-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .profile-stats {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+

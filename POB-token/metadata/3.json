@@ -1,0 +1,10 @@
+{
+  "name": "Idea Catalyst",
+  "description": "Given to the prompt that sparked a chain reaction of top-ranked answers.",
+  "image": "ipfs://bafkreigonsg56d245gkxvmrclqmasb4twjpojyvro6gasnqwdxpwp6vkba",
+  "attributes": [
+    { "trait_type": "Category", "value": "Impact" },
+    { "trait_type": "Rank", "value": "Rare" },
+    { "trait_type": "Token Reward", "value": "50 POB" }
+  ]
+}

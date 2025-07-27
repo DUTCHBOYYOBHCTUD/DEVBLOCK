@@ -1,0 +1,15 @@
+{
+  "name": "Brainstorm Oracle",
+  "description": "Recognizes deep, visionary thinkers in the AI knowledge realm.",
+  "image": "ipfs://bafkreieqlkp7fhcglnx6rgx3a4i76qcr25lwxb732ygma5r6fjavjyojxa", 
+  "attributes": [
+    { "trait_type": "Category", "value": "Wisdom" },
+    { "trait_type": "Rank", "value": "Epic" },
+    { "trait_type": "Token Reward", "value": "75 POB" }
+  ]
+
+
+
+
+  
+}
