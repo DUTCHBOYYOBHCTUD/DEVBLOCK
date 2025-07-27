@@ -165,7 +165,7 @@ const Home = () => {
             fontSize: '1.3rem',
             fontWeight: 400
           }}>
-            Discover, Share & Vote for the Best AI Prompts
+            Prompt.Rank.Earn.Repeat
           </p>
         </div>
       </div>
